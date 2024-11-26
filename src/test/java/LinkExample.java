@@ -59,12 +59,10 @@ public class LinkExample {
 
 
         //Count Layout Links
-        WebElement layoutelement = driver.findElement(By.className("layout-main-content"));
-        List<WebElement> countoflayoutlinks = layoutelement.findElements(By.tagName("a"));
-        System.out.println("Count of Layout link" + countoflayoutlinks.size());
-
-
-
+        WebElement layoutElemnt = driver.findElement(By.className("layout-main-content"));
+        List<WebElement> countOfLayoutLinks = layoutElemnt.findElements(By.tagName("a"));
+        System.out.println("Count of layout links : " + countOfLayoutLinks.size());
+        driver.quit();
 
     }
 }
