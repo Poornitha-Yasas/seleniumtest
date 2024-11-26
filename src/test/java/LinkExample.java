@@ -15,13 +15,13 @@ public class LinkExample {
     public void OpenLinkTestPage(){
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.leafground.com/dashboard.xhtml");
+        driver.get("https://www.leafground.com/link.xhtml");
     }
 
     @Test
     public void LinkTest(){
         //Take me to dashboard
-        WebElement homelink = driver.findElement(By.partialLinkText("Dashboard"));
+        WebElement homelink = driver.findElement(By.linkText("Go to Dashboard"));
         homelink.click();
         driver.navigate().back();
 
