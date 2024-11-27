@@ -14,12 +14,12 @@ public class TextBoxExample {
     @BeforeMethod
     public void OpenLinkTestPage() throws InterruptedException {
 
-//        ChromeOptions chromeOptions = new ChromeOptions();
-//        chromeOptions.setBrowserVersion("130");
-//        chromeOptions.addArguments("--start-maximized");
-//        chromeOptions.addArguments("--incognito");
-//        chromeOptions.addArguments("--headless");
-        driver = new ChromeDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.setBrowserVersion("130");
+        chromeOptions.addArguments("--start-maximized");
+        chromeOptions.addArguments("--incognito");
+        chromeOptions.addArguments("--headless");
+        driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
         driver.get("https://www.leafground.com/input.xhtml");
         Thread.sleep(2000);
