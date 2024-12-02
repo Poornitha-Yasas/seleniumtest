@@ -16,7 +16,7 @@ public class ButtonExample {
     WebDriver driver;
 
     @BeforeMethod
-    public void OpenLinkTestPage(){
+    public void buttonTestPage(){
         driver = new ChromeDriver();
         Dimension newSize = new Dimension(1280, 720);
         driver.manage().window().setSize(newSize);

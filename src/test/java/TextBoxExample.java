@@ -12,7 +12,7 @@ public class TextBoxExample {
     WebDriver driver;
 
     @BeforeMethod
-    public void OpenLinkTestPage() throws InterruptedException {
+    public void textBoxTestPage() throws InterruptedException {
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setBrowserVersion("130");
