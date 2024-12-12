@@ -18,12 +18,12 @@ public class DownloadUploadFileExample {
     public void openFileTestPage() throws InterruptedException {
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
-        Thread.sleep(3000);
     }
 
     @Test
     public void fileDownloadTest() throws InterruptedException {
         driver.get("https://www.leafground.com/file.xhtml");
+        Thread.sleep(3000);
         WebElement downloadButton = driver.findElement(By.id("j_idt93:j_idt95"));
         downloadButton.click();
         Thread.sleep(3000);
