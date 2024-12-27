@@ -71,7 +71,7 @@ public class DownloadUploadFileExample {
 
         //2nd way - Using sendkeys (Applicable only elemnt type is file)
 
-        String data = "C:\\Users\\ASUS\\Downloads\\phases.png";
+        String data = "C:\\Users\\ASUS\\Downloads\\phases.jpg";
 
         WebElement uploadUsingSendKeys = driver.findElement(By.id("j_idt88:j_idt89_input"));
         uploadUsingSendKeys.sendKeys(data);
